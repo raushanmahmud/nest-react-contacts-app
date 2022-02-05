@@ -242,9 +242,10 @@ export default function AddEditContact(props) {
                                  onChange={phoneChangeHandler}
                                  className={`mb-2 ${(validationErrors['phone']) ? style.error : ''}`}
                                  style={{paddingTop: '10px'}}/>
+                    <small>Формат: +7 777 777 77 77</small><br/>
                     {(validationErrors['phone']) ? <small className={style.errorMsg}>{validationErrors['phone']}</small> : null}
 
-                    <label>Дата рождения</label>
+                    <label className={"mt-2"}>Дата рождения</label>
                     <FormControl placeholder='Дата рождения'
                                  type={"date"}
                                  value={dateOfBirth}

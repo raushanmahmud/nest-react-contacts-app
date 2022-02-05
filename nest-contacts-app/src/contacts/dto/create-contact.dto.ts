@@ -11,13 +11,11 @@ export class CreateContactDto {
   @IsDefined({ always: true })
   @IsString({ always: true })
   @MinLength(2, { always: true })
-  @IsAlphanumeric()
   name: string;
 
   @IsDefined({ always: true })
   @IsString({ always: true })
   @MinLength(2, { always: true })
-  @IsAlphanumeric()
   lastName: string;
 
   @IsDefined({ always: true })
