@@ -1,0 +1,40 @@
+.modalWrapper {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 97;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(156, 156, 156, 0.5);
+}
+.mainContainer {
+    height: 100%;
+    display: flex;
+}
+
+.contentContainer {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.errorMsg {
+    color: red;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+
+.error {
+    border: 1px solid red;
+}
+
+.linkBtn {
+    padding: 0;
+}
+
+.linkBtn:focus {
+    outline: none !important;
+    outline-offset: unset !important;
+    box-shadow: none;
+}
